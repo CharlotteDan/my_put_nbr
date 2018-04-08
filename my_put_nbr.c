@@ -25,13 +25,13 @@ int my_put_nbr(int nb)
 		my_put_nbr(nb * -1);
 		return (0);
 	}
-	while (n > 9){
-		n = n/10;
+	while (n > 9) {
+		n = n / 10;
 		i = i * 10;
 	}
-	while (i >= 1){
+	while (i >= 1) {
 		my_putchar(((nb / i) % 10) + '0');
-		i = i/10;
+		i = i / 10;
 	}
 	return (0);
 }
